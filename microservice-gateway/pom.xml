@@ -10,6 +10,8 @@
     <groupId>com.microservice.gateway</groupId>
     <artifactId>microservice-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+
     <name>microservice-gateway</name>
     <description>Demo project for Spring Boot</description>
     <url/>
@@ -25,6 +27,9 @@
         <tag/>
         <url/>
     </scm>
+
+
+
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
