@@ -18,6 +18,7 @@
     <name>SpringMicroservices</name>
     <packaging>pom</packaging>
 
+
     <modules>
         <module>microservice-gateway</module>
         <module>microservice-eureka</module>
