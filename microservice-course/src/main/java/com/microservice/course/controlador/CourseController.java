@@ -1,4 +1,4 @@
-package com.microservice.course.microservice_course.controlador;
+package com.microservice.course.controlador;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.microservice.course.microservice_course.entidad.Course;
-import com.microservice.course.microservice_course.servicio.ICourseService;
+import com.microservice.course.entidad.Course;
+import com.microservice.course.servicio.ICourseService;
+
 
 @RestController
 @RequestMapping("/api/course")
@@ -43,4 +44,9 @@ public class CourseController {
         iCourseService.deleteById(id);
     }
 
+    @GetMapping("/search-student/{idCourse}")
+    public ResponseEntity<?> findStudentsByIdCourse(@PathVariable Long idCourse) {
+        return ResponseEntity.ok(iCourseService.findStudentByCourse(idCourse));
+
+    }
 }

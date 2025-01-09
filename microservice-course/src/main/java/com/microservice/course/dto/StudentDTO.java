@@ -1,4 +1,4 @@
-package com.microservice.course.microservice_course.dto;
+package com.microservice.course.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

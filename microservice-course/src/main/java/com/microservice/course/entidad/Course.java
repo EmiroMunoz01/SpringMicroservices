@@ -1,4 +1,4 @@
-package com.microservice.course.microservice_course.entidad;
+package com.microservice.course.entidad;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
