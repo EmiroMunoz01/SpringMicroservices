@@ -43,4 +43,9 @@ public class StudentController {
         iStudentService.deleteById(id);
     }
 
+    @GetMapping("/search-by-course/{idCourse}")
+    public ResponseEntity<?> findByIdCourse(@PathVariable Long idCourse) {
+        return ResponseEntity.ok(iStudentService.findByIdCourse(idCourse));
+    }
+
 }
